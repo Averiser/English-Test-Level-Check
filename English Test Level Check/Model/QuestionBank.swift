@@ -1,0 +1,23 @@
+//
+//  QuestionBank.swift
+//  English Test Level Check
+//
+//  Created by MyMacBook on 27/05/2019.
+//  Copyright © 2019 MyMacBook. All rights reserved.
+//
+
+import Foundation
+
+class QuestionBank {
+  var list = [Question]()
+  
+  init() {
+    list.append(Question(questionNumber: "Question 1", questionText: "... two kittens.", choiceA: "He does", choiceB: "He got", choiceC: "He has got", choiceD: "He have", answer: 3))
+    
+     list.append(Question(questionNumber: "Question 2", questionText: "... Tom play tennis?", choiceA: "Has", choiceB: "Does", choiceC: "Do", choiceD: "Is", answer: 2))
+    
+    list.append(Question(questionNumber: "Question 3", questionText: "There isn't ... money in my pockets.", choiceA: "no", choiceB: "some", choiceC: "a few", choiceD: "much", answer: 4))
+    
+     list.append(Question(questionNumber: "Question 4", questionText: "What did she ... you about it?", choiceA: "told", choiceB: "talk", choiceC: "speak", choiceD: "say to", answer: 4))
+  }
+}
