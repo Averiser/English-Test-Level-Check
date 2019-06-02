@@ -25,5 +25,6 @@ class Question {
     optionC = choiceC
     optionD = choiceD
     correctAnswer = answer
-  }
+  }  
 }
+

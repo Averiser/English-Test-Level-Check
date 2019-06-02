@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     if sender.tag == selectedAnswer {
       print("correct")
       score += 1
-    }else {
+    } else {
       print("wrong")
     }
     
@@ -47,8 +47,9 @@ class ViewController: UIViewController {
   
   func updateQuestion() {
     
-    if qNumber < allQuestions.list.count - 1 {
+    if qNumber < allQuestions.list.count {
       questionLabel.text = allQuestions.list[qNumber].question
+      questionNumber.text = allQuestions.list[qNumber].number
       optionA.setTitle(allQuestions.list[qNumber].optionA, for: UIControl.State.normal)
       optionB.setTitle(allQuestions.list[qNumber].optionB, for: UIControl.State.normal)
       optionC.setTitle(allQuestions.list[qNumber].optionC, for: UIControl.State.normal)
@@ -65,8 +66,8 @@ class ViewController: UIViewController {
   
   func updateUI() {
     scoreLabel.text = "Score: \(score)"
-    questionCounter.text = "\(qNumber + 1)/\(allQuestions.list.count)"
-    progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(qNumber + 1)
+    questionCounter.text = "\(qNumber)/\(allQuestions.list.count)"
+    progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(qNumber)
   }
   
   func restartQuiz() {
