@@ -15,7 +15,6 @@ class ViewController: UIViewController {
   @IBOutlet weak var questionNumber: UILabel!
   @IBOutlet weak var questionLabel: UILabel!
   
-  
   let questions = ["... two kittens.", "... Tom play tennis?", "There isn't ... money in my pockets.", "What did she ... you about it?", "How much ... ?", "We ..., when the phone rang."]
   let answers = [["He does", "He got", "He has got", "He have"], ["Has", "Does", "Do", "Is"], ["no", "some", "a few", "much"], ["told", "talk", "speak", "say to"], ["did it costed", "does it cost", "do this sweater cost", "does it costs"], ["cook", "don't cook", "cooked", "were cooking"]]
   
@@ -34,6 +33,18 @@ class ViewController: UIViewController {
 //    updateUI()
   }
   
+  @IBAction func action(_ sender: Any) {
+    if (sender as AnyObject).tag == Int(correctAnswer) {
+      print("correct")
+      score += 1
+    } else {
+      print("wrong")
+    }
+    if (currentQuestion != questions.count) {
+      newQuestion()
+    }
+  }
+  
   override func viewDidAppear(_ animated: Bool) {
     newQuestion()
   }
@@ -44,7 +55,7 @@ class ViewController: UIViewController {
     questionLabel.text = questions[currentQuestion]
     questionNumber.text = questions[currentQuestion]
     
-    correctAnswer = arc4random_uniform(4) + 1
+    correctAnswer = arc4random_uniform(4)
     
     // Create a button
     var button: UIButton = UIButton()
@@ -60,24 +71,13 @@ class ViewController: UIViewController {
       } else {
         button.setTitle(answers[currentQuestion][x], for: .normal)
         x = 2
+        x = 3
       }
     }
     currentQuestion += 1
   }
   
   
-  @IBAction func action(_ sender: Any) {
-    if (sender as AnyObject).tag == Int(correctAnswer) {
-            print("correct")
-            score += 1
-          } else {
-            print("wrong")
-          }
-    
-          if (currentQuestion != questions.count) {
-            newQuestion()
-          }
-  }
   
 
 //  @IBAction func answerPressed(_ sender: AnyObject) {

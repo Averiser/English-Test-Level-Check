@@ -133,10 +133,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spR-5g-u2b" userLabel="ButtonsView">
                                         <rect key="frame" x="0.0" y="254" width="320" height="254"/>
                                         <subviews>
-                                            <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TYn-gT-naQ">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TYn-gT-naQ">
                                                 <rect key="frame" x="15" y="7" width="290" height="232"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHe-SV-gwS" userLabel="Button">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHe-SV-gwS" userLabel="ButtonA">
                                                         <rect key="frame" x="0.0" y="0.0" width="290" height="47"/>
                                                         <color key="backgroundColor" red="0.070259010029999999" green="0.36847636420000002" blue="0.16107786069999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
@@ -145,11 +145,10 @@
                                                             <color key="titleShadowColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P7A-h0-trb"/>
-                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mvf-BB-58C"/>
+                                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTs-oT-YaX"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJB-rn-sVj" userLabel="Button">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJB-rn-sVj" userLabel="ButtonB">
                                                         <rect key="frame" x="0.0" y="62" width="290" height="46.5"/>
                                                         <color key="backgroundColor" red="0.070259010029999999" green="0.36847636420000002" blue="0.16107786069999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
@@ -158,11 +157,10 @@
                                                             <color key="titleShadowColor" red="0.13162460772650958" green="0.36847636421319796" blue="0.1016805055920038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rt8-kG-4Tx"/>
-                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xOH-g8-alr"/>
+                                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KO8-Th-40L"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-bY-iW8" userLabel="Button">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-bY-iW8" userLabel="ButtonC">
                                                         <rect key="frame" x="0.0" y="123.5" width="290" height="47"/>
                                                         <color key="backgroundColor" red="0.070259010029999999" green="0.36847636420000002" blue="0.16107786069999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
@@ -171,11 +169,10 @@
                                                             <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEd-oI-alr"/>
-                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfh-di-mwn"/>
+                                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Fy-Hi-QcM"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLs-p7-kqB" userLabel="Button">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLs-p7-kqB" userLabel="ButtonD">
                                                         <rect key="frame" x="0.0" y="185.5" width="290" height="46.5"/>
                                                         <color key="backgroundColor" red="0.070259010029999999" green="0.36847636420000002" blue="0.16107786069999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
@@ -184,8 +181,7 @@
                                                             <color key="titleShadowColor" red="0.13162460772650958" green="0.36847636421319796" blue="0.1016805055920038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryX-n5-uqg"/>
-                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="53k-GO-jAv"/>
+                                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hk2-7I-Bhd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -225,10 +221,6 @@
                     <tabBarItem key="tabBarItem" title="Item" id="WZy-BE-pVP"/>
                     <navigationItem key="navigationItem" id="vIU-be-g0y"/>
                     <connections>
-                        <outlet property="optionA" destination="kHe-SV-gwS" id="Rgx-qq-Zk8"/>
-                        <outlet property="optionB" destination="CJB-rn-sVj" id="vwS-d0-ydf"/>
-                        <outlet property="optionC" destination="eg0-bY-iW8" id="ELd-x0-8p9"/>
-                        <outlet property="optionD" destination="XLs-p7-kqB" id="Q7L-zU-dco"/>
                         <outlet property="progressView" destination="cA7-14-9Wb" id="gyg-zF-wPA"/>
                         <outlet property="questionCounter" destination="77K-dF-kCV" id="TLT-Jg-Uau"/>
                         <outlet property="questionLabel" destination="DWg-0g-yZx" id="Tjk-oL-I7y"/>
