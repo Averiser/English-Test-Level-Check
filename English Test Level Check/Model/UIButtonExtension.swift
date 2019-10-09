@@ -38,24 +38,24 @@ extension UIButton {
   
   func turnGreen() {
     let go_green = CASpringAnimation(keyPath: "backgroundColor")
-    go_green.duration = 2
-    go_green.fromValue = UIColor.green.cgColor
+//    go_green.duration = 2
+    go_green.fromValue = UIColor(red: 60, green: 128, blue: 232, alpha: 1)
     go_green.toValue = UIColor.green.cgColor
-    go_green.autoreverses = true
+    go_green.autoreverses = false
     go_green.repeatCount = 1
-    go_green.initialVelocity = 0.5
-    go_green.damping = 1.0
+    go_green.initialVelocity = 0.1
+//    go_green.damping = 1.0
     
     layer.add(go_green, forKey: nil)
   }
   
   func turnRed() {
     let go_red = CABasicAnimation(keyPath: "backgroundColor")
-    go_red.duration = 2
-    go_red.fromValue = UIColor.green.cgColor
+//    go_red.duration = 2
+    go_red.fromValue = UIColor(red: 60, green: 128, blue: 232, alpha: 1)
     go_red.toValue = UIColor.red.cgColor
-    go_red.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-    go_red.autoreverses = true
+//    go_red.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+    go_red.autoreverses = false
     go_red.repeatCount = 1
     
     layer.add(go_red,forKey: nil)
