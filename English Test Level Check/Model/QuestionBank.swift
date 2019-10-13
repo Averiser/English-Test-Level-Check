@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 class QuestionBank {
+  
   var list = [Question]()
   
   init() {
@@ -18,5 +20,8 @@ class QuestionBank {
     list.append(Question(qNumber: "Question 4", questionText: "What did she ... you about it?", choiceA: "told", choiceB: "talk", choiceC: "speak", choiceD: "say to", answer: 4))
     list.append(Question(qNumber: "Question 5", questionText: "How much ... ?", choiceA: "did it costed", choiceB: "does it cost", choiceC: "do this sweater cost", choiceD: "does it costs", answer: 2))
     list.append(Question(qNumber: "Question 6", questionText: "We ..., when the phone rang.", choiceA: "cook", choiceB: "don't cook", choiceC: "cooked", choiceD: "were cooking", answer: 4))
+    
   }
+  
+
 }

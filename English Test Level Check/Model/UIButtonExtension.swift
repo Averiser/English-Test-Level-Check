@@ -43,7 +43,7 @@ extension UIButton {
     go_green.toValue = UIColor.green.cgColor
     go_green.autoreverses = false
     go_green.repeatCount = 1
-    go_green.initialVelocity = 0.1
+    go_green.initialVelocity = 5
 //    go_green.damping = 1.0
     
     layer.add(go_green, forKey: nil)
