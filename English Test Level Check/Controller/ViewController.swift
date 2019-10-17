@@ -34,7 +34,6 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    shuffleArray(arrayToBeShuffled: )
     updateQuestion()
     updateUI()
   }
@@ -42,23 +41,12 @@ class ViewController: UIViewController {
   @IBAction func answerPressed(_ sender: UIButton) {
     if (sender.tag == selectedAnswer) {
       sender.turnGreen()
-//      UIView.animate(withDuration: 0.5, animations: {
-//        sender.backgroundColor = UIColor.green
-//      }, completion: {_ in
-//        sender.backgroundColor = UIColor(red: 18, green: 94, blue: 41, alpha: 1.0) // change it back to original color
-//      })
       print("correct")
       score += 1
     } else {
-//      UIView.animate(withDuration: 0.5, animations: {
-//        sender.backgroundColor = UIColor.red
-//      }, completion: {_ in
-//        sender.backgroundColor = UIColor(red: 18, green: 94, blue: 41, alpha: 1.0) // change it back to original color
-//      })
       sender.turnRed()
       print("wrong")
       }
-//    qNumber += 1
     qtionNumber += 1
     updateQuestion()
   }
@@ -82,6 +70,7 @@ class ViewController: UIViewController {
       present(alert, animated: true, completion: nil)
     }
     updateUI()
+    shuffleArray(arrayToBeShuffled: allQuestions.list)
   }
   
   func updateUI() {
@@ -89,6 +78,7 @@ class ViewController: UIViewController {
     questionCounter.text = "\(qtionNumber)/\(allQuestions.list.count)"
     progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(qtionNumber)
     questionNumber.text = "Question \(qNumber)"
+    
   }
   
   func restartQuiz() {
@@ -98,9 +88,9 @@ class ViewController: UIViewController {
     updateQuestion()
   }
   
-  func shuffleArray(arrayToBeShuffled array1: [String]) -> [String] { // edit code here
+  @discardableResult func shuffleArray(arrayToBeShuffled array1: [Question]) -> [Question] { // edit code here
     var oldArray = array1
-    var newArray = [String]() // edit code here
+    var newArray = [Question]() // edit code here
     var randomNumber: Int
     
     for _ in array1 {
