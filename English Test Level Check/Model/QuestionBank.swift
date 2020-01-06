@@ -22,5 +22,18 @@ class QuestionBank {
     
   }
   
+//  func shuffleArray(arrayToBeShuffled array1: [Question]) -> [Question] { // edit code here
+//  var oldArray = array1
+//  var newArray = [Question]() // edit code here
+//  var randomNumber: Int
+//  
+//  for _ in array1 {
+//  randomNumber = Int(arc4random_uniform(UInt32(oldArray.count)))
+//  newArray.append(oldArray[randomNumber])
+//  oldArray.remove(at: randomNumber)
+//  }
+//  return newArray
+//  }
+  
 
 }

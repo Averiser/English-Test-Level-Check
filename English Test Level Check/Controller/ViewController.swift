@@ -70,7 +70,9 @@ class ViewController: UIViewController {
       present(alert, animated: true, completion: nil)
     }
     updateUI()
-    shuffleArray(arrayToBeShuffled: allQuestions.list)
+    // 2020-01-06 the only line below - and questions get randomized, the only thing some repeat, others don't pop up at all, so append-remove thing should be handled.
+    allQuestions.list.shuffle()
+//    shuffleArray(arrayToBeShuffled: allQuestions.list)
   }
   
   func updateUI() {
@@ -88,18 +90,17 @@ class ViewController: UIViewController {
     updateQuestion()
   }
   
-  @discardableResult func shuffleArray(arrayToBeShuffled array1: [Question]) -> [Question] { // edit code here
-    var oldArray = array1
-    var newArray = [Question]() // edit code here
-    var randomNumber: Int
-    
-    for _ in array1 {
-      randomNumber = Int(arc4random_uniform(UInt32(oldArray.count)))
-      newArray.append(oldArray[randomNumber])
-      oldArray.remove(at: randomNumber)
-    }
-    return newArray
-  }
-  
+//  @discardableResult func shuffleArray(arrayToBeShuffled array1: [Question]) -> [Question] { // edit code here
+//  var oldArray = array1
+//  var newArray = [Question]() // edit code here
+//  var randomNumber: Int
+//
+//  for _ in array1 {
+//  randomNumber = Int(arc4random_uniform(UInt32(oldArray.count)))
+//  newArray.append(oldArray[randomNumber])
+//  oldArray.remove(at: randomNumber)
+//  }
+//  return newArray
+//  }
 }
 
