@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0262FA6D-8875-4B7F-88C7-F82AC67326DA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AF1EC0E-6598-4E90-851F-79C1D1656C8C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "English Test Level Check/Model/ .swift"
+            timestampString = "580916310.123023"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
