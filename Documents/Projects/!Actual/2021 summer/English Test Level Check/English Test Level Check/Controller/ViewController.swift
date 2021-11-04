@@ -71,7 +71,7 @@ class ViewController: UIViewController {
     }
     updateUI()
     // 2020-01-06 the only line below - and questions get randomized, the only thing some repeat, others don't pop up at all, so append-remove thing should be handled.
-    allQuestions.list.shuffle()
+//    allQuestions.list.shuffle()
 //    shuffleArray(arrayToBeShuffled: allQuestions.list)
   }
   
@@ -80,6 +80,9 @@ class ViewController: UIViewController {
     questionCounter.text = "\(qtionNumber)/\(allQuestions.list.count)"
     progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(qtionNumber)
     questionNumber.text = "Question \(qNumber)"
+    
+    allQuestions.list.shuffle()
+    allQuestions.list.count - 1
     
   }
   
