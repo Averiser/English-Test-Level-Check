@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 //  let questions = ["... two kittens.", "... Tom play tennis?", "There isn't ... money in my pockets.", "What did she ... you about it?", "How much ... ?", "We ..., when the phone rang."]
 //  let answers = [["He does", "He got", "He has got", "He have"], ["Has", "Does", "Do", "Is"], ["no", "some", "a few", "much"], ["told", "talk", "speak", "say to"], ["did it costed", "does it cost", "do this sweater cost", "does it costs"], ["cook", "don't cook", "cooked", "were cooking"]]
   
-  let allQuestions = QuestionBank()
+  var allQuestions = QuestionBank()
   var qtionNumber: Int = 0
   var score: Int = 0
   var selectedAnswer: Int = 0
@@ -82,7 +82,6 @@ class ViewController: UIViewController {
     questionNumber.text = "Question \(qNumber)"
     
     allQuestions.list.shuffle()
-    allQuestions.list.count - 1
     
   }
   
